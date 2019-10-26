@@ -91,10 +91,20 @@ font-family:ostrich;
         border: 1px solid red;
         width: 100%;
         border-radius: 5px;
+        position:relative;
     }
     button{
         background-color: orange;
         text-align: center;
     }
+    .fas{
+        padding: 15px;
+        border-radius: 50%;
+        background-color: orange;
+        position: absolute;
+        top: 5px;
+        left: 50%;
+    }
 }
+
 
