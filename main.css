@@ -3,14 +3,45 @@
   src: url("fonts/ostrich-regular.ttf");
 }
 
+li {
+  list-style: none;
+}
+
+.customNav {
+  border: 1px solid red;
+  margin-right: 50px;
+}
+
+.customNav li:hover > ul {
+  display: block;
+}
+
 .customNav li a {
   color: #fff !important;
   padding: 4px 15px !important;
 }
 
-.customNav .active {
-  background: orange;
+.customNav li a:hover {
+  color: #ef6603 !important;
   border-radius: 50px;
+}
+
+.customNav .active {
+  background-color: #ef6603;
+  border-radius: 50px;
+}
+
+.customNav .active:hover {
+  background-color: #fff !important;
+}
+
+.customNav ul {
+  background-color: #fff;
+  padding: 10px 30px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: none;
 }
 
 .carousel-bg {
@@ -41,11 +72,10 @@ h2 {
 .carousel-circle ol {
   margin-top: 20px;
   position: relative;
+  border: 1px solid red;
 }
 
 .carousel-circle li {
-  position: absolute;
-  top: 40;
   background-color: #000;
   width: 15px !important;
   height: 15px !important;
@@ -82,39 +112,99 @@ h2 {
 
 .services-bg .heading h1 {
   text-align: center;
-  font-size: 80px;
+  font-size: 50px;
   text-transform: uppercase;
   font-weight: bold;
+  color: #fff;
 }
 
 .services-bg .heading p {
   font-size: 35px;
+  font-family: ostrich;
   text-align: center;
+  color: #fff;
+  margin: 30px 0px;
 }
 
-.services-bg h1, .services-bg h3, .services-bg p {
-  font-family: ostrich;
+.services-bg h1, .services-bg h3 {
+  font-family: ostrich_sansblack;
+  text-align: center;
+  color: #3a3a3a;
+}
+
+.services-bg h3 {
+  font-size: 20px;
+  font-weight: 300px;
   text-align: center;
 }
 
 .services-bg .div-pad {
-  border: 1px solid red;
   width: 100%;
   border-radius: 5px;
   position: relative;
+  padding: 50px 50px;
 }
 
 .services-bg button {
-  background-color: orange;
+  background-color: #ef6603;
   text-align: center;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 .services-bg .fas {
   padding: 15px;
   border-radius: 50%;
-  background-color: orange;
+  background-color: #ef6603;
   position: absolute;
   top: 5px;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-bottom: 10px;
+}
+
+.cat-heading h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: ostrich_sansblack;
+  text-transform: uppercase;
+}
+
+.cat-heading p {
+  text-align-last: center;
+  font-size: 35px;
+  font-family: ostrich;
+  margin: 20px 0;
+}
+
+.categories ul li {
+  display: inline-block;
+  background-color: #ef6603;
+  color: #fff;
+  padding: 4px 8px;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+.categories ul li:nth-last-child(6) {
+  background-color: #000;
+}
+
+.categories a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.categories a:hover {
+  text-decoration: none;
+}
+
+.categories li:hover {
+  background-color: orange;
+}
+
+.img-section img {
+  margin: 5px;
 }
 /*# sourceMappingURL=main.css.map */

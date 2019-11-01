@@ -8,13 +8,13 @@
     <link href="main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <script src="main.js"></script>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark " id="navTop">
+        <a class="navbar-brand" href="#"><img src="./images/logo.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -38,12 +38,16 @@
                     <a class="nav-link" href="#">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav   -link" href="#">More</a>
+                    <a class="nav hover-item   -link" href="#">More</a>
+                    <ul>
+                        <li>Components</li>
+                        <li>Icons</li>
+                    </ul>
                 </li>
             </ul>
         </div>
     </nav>
-
+      
 
     <div id="carouselExampleIndicators" class="carousel slide carousel-bg" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -151,77 +155,112 @@
                 <h1>Selecao services</h1>
                 <p>Qui te reprimique scripserit, et zril ornatus duo, mei te habemus fastidii interpretaris. Mel eu vide pericula, te ius sint<br> concludaturque. No quo tale vocibus.</p>
                 </div>  
-                    <div class="col-2 px-5 mx-5 bg-light div-pad">
-                        <i class="fas fa-users"></i>
+                    <div class="col-2  mx-5 bg-light div-pad">
+                        <i class="fas mb-3 fa-users"></i>
                         <h3>UI Design</h3>
                         <p>&Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, ipsum.</p>
                         <button>Learn more</button>
                     </div>
-                    <div class="col-2 px-5  mx-5 bg-light div-pad">
-                        <i class=" fas far fa-thumbs-up"></i> 
+                    <div class="col-2  mx-5 bg-light div-pad">
+                        <i class=" fas mb-3 far fa-thumbs-up"></i> 
                         <h3>BRAND IDENTITY</h3>
                         <p>&Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, ipsum.</p>
                         <button>Learn more</button>
                     </div>
-                    <div class="col-2 px-5 mx-5 bg-light div-pad">
-                        <i class="fas fa-flask"></i>
+                    <div class="col-2  mx-5 bg-light div-pad">
+                        <i class="fas mb-3 fa-flask"></i>
                         <h3>WEB APPLICATION</h3>
                         <p>&Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, ipsum.</p>
                         <button>Learn more</button>
                     </div>
-                    <div class="col-2 px-5 mx-5 bg-light div-pad">
-                        <i class=" fas fab fa-twitter"></i>
+                    <div class="col-2 mx-5 bg-light div-pad">
+                        <i class=" fas mb-3 fab fa-twitter"></i>
                         <h3>SOCIAL MEDIA</h3>
                         <p>&Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, ipsum.</p>
                         <button>Learn more</button>
                     </div>
             </div>
         </section>
+        <section class="cat-section">
+          <div class="cat-heading">
+            <h1>What WE'VE done </h1>
+            <p>
+              Congue assentior eu vix. Iusto voluptaria vis te. Eos ea quot qualisque, usu an doming graeco vocent.
+            </p>
+          </div>
+          <div class="categories">
+            <ul>
+              <li><a href="">All categories</a></li>
+              <li> <a href="">Web design</a></li>
+              <li><a href="">Brand Identity</a></li>
+              <li><a href="">Graphics design</a></li>
+              <li> <a href="">Photography</a></li>
+              <li><a href="">Illustrator</a></li>
+            </ul>
+          </div>
+          <figure class="img-section">
+            <img src="./images/img1.jpg" >
+            <img src="./images/img2.jpg" >
+            <img src="./images/img3.jpg" >
+            <img src="./images/img4.jpg" >
+            <img src="./images/img5.jpg" >
+            <img src="./images/img6.jpg" >
+            <img src="./images/img7.jpg" >
+            <img src="./images/img8.jpg" >
+            <img src="./images/img9.jpg" >
+            <img src="./images/img10.jpg" >
+            <img src="./images/img11.jpg" >
+            <img src="./images/img12.jpg" >
+
+          </figure>
+        </section>
         <div class="row">
-            <div class="col">
-                <h4>Contact form</h4>
-                    <form>
-                            <div class="form-group">
-                                    <label for="exampleFormControlInput1">Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="name@example.com" required>
-                
-                                </div>
-                            <div class="form-group">
-                              <label for="exampleFormControlInput1">Email address</label>
-                              <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
-                            </div>
-                           
-                            <div class="form-group">
-                                    <label for="exampleFormControlInput1">Subject</label>
-                                    <input type="text" class="form-control" id="sub" placeholder="name@example.com" required>
-                                  </div>
-                           
-                            <div class="form-group">
-                              <label for="exampleFormControlTextarea1">Example textarea</label>
-                              <textarea class="form-control" id="msg" rows="3" required></textarea>
-                            </div>
-                            <button type="button" onclick="submitToFirebase()" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Submit</button>
-                          </form>
-                          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                      </button>
-                                    </div>
-                                    <div class="modal-body">
-                                      ...
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                      <button type="button" class="btn btn-primary">Save changes</button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+          <div class="col">
+            <h4>Contact form</h4>
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="name@example.com" required>
+        
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+              </div>
+        
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Subject</label>
+                <input type="text" class="form-control" id="sub" placeholder="name@example.com" required>
+              </div>
+        
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Example textarea</label>
+                <textarea class="form-control" id="msg" rows="3" required></textarea>
+              </div>
+              <button type="button" onclick="submitToFirebase()" class="btn btn-primary" data-toggle="modal"
+                data-target="#exampleModal">Submit</button>
+            </form>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
             <div class="col">
                     <h4>Get in touch with us</h4>
                 <p>Feel free to ask if you have any question regarding our services or if you just want to say Hello, we would love to hear from you.</p>
@@ -296,6 +335,7 @@
     <script>
         AOS.init();
       </script>
+  
 </body>
 
 </html>
