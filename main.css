@@ -8,7 +8,6 @@ li {
 }
 
 .customNav {
-  border: 1px solid red;
   margin-right: 50px;
 }
 
@@ -156,11 +155,8 @@ h2 {
   padding: 15px;
   border-radius: 50%;
   background-color: #ef6603;
-  position: absolute;
   top: 5px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   margin-bottom: 10px;
 }
 
@@ -205,6 +201,6 @@ h2 {
 }
 
 .img-section img {
-  margin: 5px;
+  margin: 10px;
 }
 /*# sourceMappingURL=main.css.map */
